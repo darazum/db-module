@@ -1,0 +1,22 @@
+<root>
+    <users>
+        <user>
+            <id>1</id>
+            <name>Dima</name>
+            <profile field="age">23</profile>
+            <profile field="gender">1</profile>
+        </user>
+        <user>
+            <id>2</id>
+            <name>Vasja</name>
+            <profile field="age">65</profile>
+            <profile field="gender">1</profile>
+        </user>
+        <user>
+            <id>3</id>
+            <name>Natasha</name>
+            <profile field="age">18</profile>
+            <profile field="gender">2</profile>
+        </user>
+    </users>
+</root>

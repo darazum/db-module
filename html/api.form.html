@@ -1,0 +1,23 @@
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+userId: <input type="text" id="user_id"> <input type="button" value="show" onclick="showUser();">
+<div id="user">
+
+</div>
+
+<script>
+    function showUser() {
+        $.get(
+            '/api/getUser.php',
+            {
+                id: $('#user_id').val()
+            },
+            function (r) {
+                var html = 'userName: ' + r.name + '<br>';
+                html += 'gender: ' + r.gender + '<br>';
+                html += 'day of birth: ' + r.birthday;
+                $('#user').html(html);
+            }
+        );
+    }
+</script>
